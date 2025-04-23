@@ -6,4 +6,4 @@ export function Header() {
       <h1 className="text-2xl font-bold">Jatim Park 1</h1>
     </header>
   );
-}
+};

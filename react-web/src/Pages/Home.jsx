@@ -1,6 +1,6 @@
 // src/pages/Home.jsx
 import React from "react";
-import { CardWisata } from "./Components/CardWisata";
+import { CardWisata } from "../Components/CardWisata";
 
 const Home = () => {
   return (
