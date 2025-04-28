@@ -162,38 +162,41 @@ export function Hero() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-      }}    >
-      {/* <div style={{backgroundImage:{'https://senyumworldhotel.com/wp-content/uploads/2024/09/Jatim-Park-1.webp'}}}>
-      </div> */}
-      <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 md:mb-8">
-        Selamat Datang di Website Kami
-      </h1>
-      <p className="text-lg md:text-xl text-white max-w-3xl mb-8 md:mb-6 mx-auto">
-        Wahana wisata edukasi pertama dan terbesar di Jawa Timur yang menghadirkan
-        berbagai pengalaman seru untuk seluruh keluarga.
-      </p>
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      
+      <div className="relative z-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 md:mb-8">
+          Petualangan Seru Menanti di Jatim Park 1!
+        </h1>
+        <p className="text-lg md:text-xl text-white max-w-3xl mb-8 md:mb-6 mx-auto">
+          Temukan keajaiban edukasi dan hiburan di taman wisata terbesar Jawa Timur. 
+          Pengalaman tak terlupakan untuk seluruh keluarga!
+        </p>
 
-      {/* Tombol Aksi */}
-      <div className="flex gap-6 flex-wrap justify-center">
-        <Link to="wahana" smooth={true} offset={-70} duration={500}>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 rounded-xl transition-shadow shadow"
-          >
-            Lihat Wahana
-          </motion.button>
-        </Link>
+        {/* Tombol Aksi */}
+        <div className="flex gap-6 flex-wrap justify-center">
+          <Link to="wahana" smooth={true} offset={-70} duration={500}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 rounded-xl transition-shadow shadow"
+            >
+              Jelajahi Wahana
+            </motion.button>
+          </Link>
 
-        <Link to="tiket" smooth={true} offset={-70} duration={500}>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-xl shadow transition-shadow"
-          >
-            Pesan Tiket
-          </motion.button>
-        </Link>
+          <Link to="tiket" smooth={true} offset={-70} duration={500}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-xl shadow transition-shadow"
+            >
+              Dapatkan Tiket Sekarang
+            </motion.button>
+          </Link>
+        </div>
       </div>
     </motion.section>
   );
