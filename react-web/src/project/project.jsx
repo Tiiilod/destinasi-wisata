@@ -202,6 +202,7 @@ export function Hero() {
   );
 }
 
+
 export function Galeri() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
@@ -225,7 +226,7 @@ export function Galeri() {
       className="w-full bg-blue-600 rounded-t-3xl px-6 py-16 z-10"
     >
       <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {["jp1-1.jpg", "jp1-2.jpg", "jp1-3.jpg", "jp1-4.jpg"].map((img, i) => (
+        {["ss1.jpg", "ss2.jpg", "ss3.jpg", "ss4.jpg"].map((img, i) => (
           <motion.div
             key={i}
             whileHover={{ scale: 1.03 }}
