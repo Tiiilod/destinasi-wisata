@@ -37,7 +37,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-6 shadow-md bg-yellow-200 sticky top-0 z-50">
+    <nav className="w-full flex items-center justify-between px-8 py-6 shadow-md bg-white  sticky top-0 z-50">
       {/* Logo */}
       <Link
         to="home"
